@@ -1,0 +1,146 @@
+.usercontainerDIV {
+    background-color: #a35a42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 600px;
+}
+
+.Uh0 {
+    font-size: 50px;
+    font-family: 'Arial';
+    color: #a35a42;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Uh1 {
+    font-size: 20px;
+    font-family: 'Arial';
+    color: #5d86a2;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.date {
+    color: #ffffff;
+    font-size: 15px;
+    padding-bottom: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0 5px;
+}
+
+.row {
+    margin: 0 -5px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 190px;
+    margin-top: 10px;
+    background-color: #5d86a25f;
+    padding: 10px;
+
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #1f1f1fdb;
+    color: white;
+    height: 250px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fa {
+    font-size: 50px;
+}
+
+h3 {
+    color: #5d86a2;
+    font-size: 35px;
+}
+
+img {
+    width: 90px;
+    padding-top: 20px;
+}
+
+
+/* hove */
+#mySidenav a {
+    position: absolute;
+    left: -99px;
+    transition: 0.3s;
+    padding-top: 13px;
+    width: 115px;
+    height: 45px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#Home {
+    top: 300px;
+    background-color: #7fa1ad;
+}
+
+#Rate {
+    top: 355px;
+    background-color: #5d86a2;
+}
+
+#NewJourney {
+    top: 410px;
+    background-color: #806663;
+}
+
+#Volunteer {
+    top: 465px;
+    background-color: #d78063
+}
+
+#RiskReports {
+    top: 520px;
+    background-color: #2e3638
+}
+
+#socialMediaContainer {
+    background-color: #5d86a278;
+    width: 43px;
+    height: 270px;
+    justify-content: center;
+    text-align: center;
+    margin-top: -307px;
+    margin-left: 97%;    
+    border-radius: 8px 0px 0px 8px;
+}

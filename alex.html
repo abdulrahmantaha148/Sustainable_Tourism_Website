@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style/rs.css">
+    <script src="https://js.arcgis.com/4.28/"></script>
+    <title>alex</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="loadingDiv" class="loading">
+            <img src="/assets/img/loader.gif" alt="Loading..." />
+            <p>Loading map...</p>
+          </div>
+          
+        <div class="form-container">
+
+            <h1 class="TitleText pt-1">CUSTOMIZE YOUR OWN JOURNEY</h1>
+            <form action="">
+                <div class="pt-1">
+
+                    <h2 class="SubTitleText">Step 1 : Destination</h2>
+                    <label for="attractios" class="Text">Choose your Destination</label>
+                    <select name="attractios" id="attractios" class="SelectText"></select>
+
+                </div>
+                <div class="pt-1">
+                    <h2 class="SubTitleText">Step 2 : Source</h2>
+                    <label for="attractios" class="Text">Pick source location from map by click on </label>
+                    <img class="origin-btn-icon" src="/assets/img/location.png" width="30" height="30" />
+
+                </div>
+
+
+
+
+                <h2 class="SubTitleText pt-1">Step 3 : Travel Mode</h2>
+
+                <label for="modes" class="Text">Choose your prefered Travel Mode</label>
+
+                <select name="modes" id="modes" class="SelectText ">
+                    <option value="" selected disabled hidden>Choose from list</option>
+                    <option value="on foot">On Foot</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="tram">Tram</option>
+                    <option value="E-bus">E-Bus</option>
+                </select>
+
+                <h3 class="Text" style="font-size: 14px;">Do you have a Bike?</h3>
+                <input class="inputs" type="radio" id="bike1" name="bike" value="yes">
+                <label class="Text" for="bike1"> Yes, I have</label>
+                <input class="inputs" type="radio" id="bike2" name="bike" value="no">
+                <label class="Text" for="bike2">No, I haven't</label>
+
+                <span class="StartButton pt-1 pb-2" id="submit-btn">Start</span>
+                <span class="StartButton pt-1 pb-2" id="" onclick="window.document.location.reload()">Reset</span>
+            </form>
+
+        </div>
+
+        <div id="viewDiv">
+            <div class="origin-btn">
+                <img class="origin-btn-icon" src="/assets/img/location.png" width="30" height="30" />
+                <!-- Point to origin -->
+            </div>
+        </div>
+
+
+        <div style="position: absolute; width: 2.5rem; height: 2.5rem; bottom: 14rem;  right: 1rem; background:black;">
+            <div class="dropdown">
+                <span>
+                    <div id="">
+                        <img title="i need a help" src="/assets/img/help.png" alt="maintenance bike shops "
+                            style="width: 2.5rem; height: 2.5rem;" />
+                    </div>
+                </span>
+                <div class="dropdown-content">
+                    <div id="maintenance" style="background: black;">
+                        <img title="maintenance bike shops" src="/assets/img/maintainence shop.png" alt="maintenance bike shops"
+                            style="width: 50px; height: 50px;" />
+                    </div>
+                    <div id="help" style="background: black;">
+                        <img title="Cycling Community Helpers" src="/assets/img/helper.png" alt="Cycling Community Helpers"
+                            style="width: 50px; height: 50px;" />
+                    </div>
+                    
+                </div>
+              </div>
+           
+        </div>
+    </div>
+
+<div  id ="lengthtimecontainer">
+
+</div>
+<div id="tramcontainer"></div>
+<div id="cyclingcontainer"></div>
+<div id="lengthshopcontainer"></div>
+<div id="lenghthelpcontainer"></div>
+
+
+    <div id="endjourney" class="hidden">
+        <a href="/User Dashboard.html" target="_blank"><span class="StartButton pt-1 pb-2" id="end-btn" style="width: 115px; height: 25px; position:absolute;bottom: 2rem;  left: 50%;">End Journey</span></a>
+        
+    </div>
+
+    <!-- <audio src="https://drive.google.com/file/d/1aDej48gqpc2rLtLKjY0BtW088rRqNW4T/view?" controls>
+
+        </audio> -->
+</body>
+<script src="/script/alex.js">
+
+</script>
+
+</html>
